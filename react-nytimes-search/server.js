@@ -15,7 +15,7 @@ var PORT = process.env.PORT || PORT;
 if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI);
 } else { 
-    mongoose.connect('mongodb://localhost/nyt19');
+    mongoose.connect('mongodb://127.0.0.1:nyt19');
 }
 
 var db = mongoose.connection;
@@ -32,10 +32,12 @@ db.on('open', function() {
 // app.use(express.static(path.join(_dirname, 'build')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
+app.use(bodyParser.text());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
-var Article = require('./models/Article.js');
-var Note = require('./models/Note.js');
+let Article = require('./models/Article.js');
+let Note = require('./models/Note.js');
 
 //html
 app.get('/', function(req, res) {

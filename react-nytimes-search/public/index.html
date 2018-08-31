@@ -23,6 +23,13 @@
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
     crossorigin="anonymous">
     <title>React App</title>
+
+
+    <style>
+      button.btn.toast {
+        position: static;
+      }
+    </style>
   </head>
   <body>
     <noscript>
@@ -39,6 +46,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $(document).ready(() => {
+        $('.modal').modal();
+        // $('.article-save').on('click', () => {
+        // 	window.Materialize.toast('I am a toast!', 4000);
+        // });
+    });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
