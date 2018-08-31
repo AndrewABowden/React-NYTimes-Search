@@ -1,16 +1,28 @@
 {
-  "name": "react-nytimes-search",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "react-nytimes-search",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"axios": "^0.16.2",
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"mongoose": "^5.2.12",
+		"path": "^0.12.7",
+		"react": "^15.5.4",
+		"react-dom": "^15.5.4",
+		"react-materialize": "^1.0.1",
+		"request": "^2.81.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.11.0",
+		"react-scripts": "1.0.7"
+	},
+	"scripts": {
+		"start": "node server.js",
+		"dev": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	},
+	"proxy": "http://localhost:3000"
 }
