@@ -32,7 +32,7 @@ db.on('open', function() {
 // app.use(express.static(path.join(_dirname, 'build')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.text());
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
